@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>CMQ</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/cmq.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<script>
+$(document).ready(function() {
+    $('select').material_select();
+});
+</script>
+
+
+<body>
+<ul id="dropdown1" class="dropdown-content">
+<li><a href="manageq.html">Manage Queue </a></li>
+  <li><a href="login.html">Logout</a></li>
+</ul>
+
+  <nav class="red darken-4" role="navigation">
+    <div class="nav-wrapper">
+      <a id="logo" href="index.html" class="brand-logo">CMQueue</a>
+      <ul class="right hide-on-med-and-down">
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="" id="logout" data-beloworigin="true" data-activates="dropdown1">Andrew Kim<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+    </div>
+  </nav>
+
+
+  <div class="section no-pad-bot no-pad-top myContainer">
+    <div class="row">
+      <div class="col s12 card z-depth-2" id="createqform">
+        <h4> Create a Queue </h4>
+        <hr>
+          <form action="#">
+              <div id="radioButtons">
+                <p id="qtypeLabel"> Queue Type </p>
+                <input class="with-gap" name="type" type="radio" id="test1" />
+                <label class="qtype-left" for="test1">Office Hours</label>
+                <input class="with-gap qtype" name="type" type="radio" id="test2" />
+                <label class="qtype" for="test2">Study Areas</label>
+                <input class="with-gap qtype" name="type" type="radio" id="test3" />
+                <label class="qtype" for="test3">Sports</label>
+                <input class="with-gap qtype" name="type" type="radio" id="test4" />
+                <label class="qtype" for="test4">Dining</label>
+              </div>
+            <br><br>
+            <div class = "row">
+              <!-- <h5> Queue Name </h5> -->
+              <div class="input-field col s7">
+                <input placeholder="ex: 15-112 Office Hours" id="first_name" type="text" class="validate">
+                <label for="first_name">Queue Name</label>
+              </div>
+            </div>
+            <div class = "row">
+              <div class="input-field col s7">
+                <input placeholder="ex: 15-112"  id="first_name" type="text" class="validate">
+                <label for="first_name">Course #</label>
+              </div>
+            </div>
+            <div class = "row">
+              <div class="input-field col s7">
+                <input placeholder="ex: Wean 6423" id="first_name" type="text" class="validate">
+                <label for="first_name">Location</label>
+              </div>
+            </div>
+<!-- 
+            <div class = "row">
+              <div class="input-field col s7">
+                <input placeholder="ex: Introduction to Programming"  id="first_name" type="text" class="validate">
+                <label for="first_name">Course Name</label>
+              </div>
+            </div> -->
+            <div class = "row">
+              <div class="input-field col s7">
+                <textarea id="textarea1" class="materialize-textarea" data-length="120"></textarea>
+                <label for="textarea1">Description</label>
+              </div>
+            </div>
+            <a href="manageq.html">
+              <button href="manageq.html" class="btn waves-effect waves-light" type="submit" id="createqButton" name="action">Create Queue
+              </button>
+            </a>
+          </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer  blue-grey darken-2">
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="red-text text-lighten-2">Yeee</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

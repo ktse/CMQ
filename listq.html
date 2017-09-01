@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>CMQ</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/cmq.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<ul id="dropdown1" class="dropdown-content">
+<li><a href="manageq.html">Manage Queue </a></li>
+  <li><a href="login.html">Logout</a></li>
+</ul>
+
+  <nav class="red darken-4" role="navigation">
+    <div class="nav-wrapper">
+      <a id="logo" href="index.html" class="brand-logo">CMQueue</a>
+      <ul class="right hide-on-med-and-down">
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" id="logout" href="" data-beloworigin="true" data-activates="dropdown1">Andrew Kim<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+    </div>
+  </nav>
+
+  <div class="section no-pad-bot no-pad-top" id="queueContainer">
+    <div class="row">
+      <div class="col s9">
+        <img class="qicon" src="images/clipboard.png" height="50px"/>
+        <h5 id="listTitle"> Join an Office Hours Queue </h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+
+        <table class="bordered striped z-depth-2">
+
+          <thead> 
+            <tr>
+              <th data-field="name">Queue Name</th>
+              <th data-field="id">Course Number</th>
+              <th data-field="units">Wait Time</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Introduction to Programming <!-- <i>(Freshman Spring)</i>  --></td> 
+              <td> 15-112 </td> 
+              <td class="waitTime"> 10 min. </td>
+              <td> <a href="inq.html" class="waves-effect waves-light btn">Join</a> </td>
+            </tr>
+
+            <tr>
+              <td>Application Design and Development <!-- <i> (Sophomore Fall)</i> --> </td> 
+              <td> 67-272 </td> 
+              <td class="waitTime"> 2 min. </td>
+              <td> <a href="inq.html" class="waves-effect waves-light btn">Join</a> </td>
+            </tr>
+
+            <tr>
+              <td>Principles of Imperative Computation <!-- <i> (Sophomore Spring)</i> --></td> 
+              <td> 15-122 </td> 
+              <td class="waitTime"> 7 min. </td>
+              <td> <a href="inq.html" class="waves-effect waves-light btn">Join</a> </td>
+            </tr>
+
+            <tr>
+              <td>Introduction to Computer Systems <!-- <i> (Junior Fall) </i> --></td> 
+              <td> 15-213 </td> 
+              <td class="waitTime"> 2 min. </td>
+              <td> <a href="inq.html" class="waves-effect waves-light btn">Join</a> </td>
+            </tr>
+
+            <tr>
+              <td> More Great Theoretical Ideas in Computer Science<!-- <i> (Senior Fall) </i> --> </td> 
+              <td> 15-252 </td> 
+              <td class="waitTime"> 12 min. </td>
+              <td> <a href="inq.html" class="waves-effect waves-light btn">Join</a> </td>
+            </tr>
+           <tr>
+              <td>Introduction to Programming <!-- <i>(Freshman Spring)</i>  --></td> 
+              <td> 15-112 </td> 
+              <td class="waitTime"> 10 min. </td>
+              <td> <a href="inq.html" class="waves-effect waves-light btn">Join</a> </td>
+            </tr>
+
+            <tr>
+              <td>Application Design and Development <!-- <i> (Sophomore Fall)</i> --> </td> 
+              <td> 67-272 </td> 
+              <td> 2 min. </td>
+              <td> <a href="inq.html" class="waves-effect waves-light btn">Join</a> </td>
+            </tr>
+
+            <tr>
+              <td>Principles of Imperative Computation <!-- <i> (Sophomore Spring)</i> --></td> 
+              <td> 15-122 </td> 
+              <td> 7 min.</td>
+              <td> <a href="inq.html" class="waves-effect waves-light btn">Join</a> </td>
+            </tr>
+
+            <tr>
+              <td>Introduction to Computer Systems <!-- <i> (Junior Fall) </i> --></td> 
+              <td> 15-213 </td> 
+              <td> 2 min.</td>
+              <td> <a href="inq.html" class="waves-effect waves-light btn">Join</a> </td>
+            </tr>
+
+            <tr>
+              <td> Great Theoretical Ideas in Computer Science<!-- <i> (Senior Fall) </i> --> </td> 
+              <td> 15-251 </td> 
+              <td> 13 min.</td>
+              <td> <a href="inq.html" class="waves-effect waves-light btn">Join</a> </td>
+            </tr>
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="page-footer  blue-grey darken-2">
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="red-text text-lighten-2">Yeee</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

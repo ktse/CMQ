@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>CMQ</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/cmq.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<ul id="dropdown1" class="dropdown-content">
+<li><a href="manageq.html">Manage Queue </a></li>
+  <li><a href="login.html">Logout</a></li>
+</ul>
+
+  <nav class="red darken-4" role="navigation">
+    <div class="nav-wrapper">
+      <a id="logo" href="index.html" class="brand-logo">CMQueue</a>
+      <ul class="right hide-on-med-and-down">
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="" id="logout" data-beloworigin="true" data-activates="dropdown1">Andrew Kim<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+    </div>
+  </nav>
+
+  <div class="section no-pad-bot no-pad-top" id="queueContainer">
+    <div class="row">
+      <div class="col s6">
+        <h5> 15-112 Office Hours Queue </h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s6">
+        <div class="card"">
+          <div class="collection">
+            <!-- <a href="#!" class="collection-item">sdadsdsaa <a href="#!" class="secondary-content"><i class="material-icons">send</i></a> </a> -->
+            <a class="collection-item inq" >1. Hans Chen</a>
+            <a class="collection-item inq">2. Kendrick Tse</a>
+            <a class="collection-item inq">3. Justin Chang</a>
+            <a class="collection-item inq">4. Albert Han</a>
+            <a class="collection-item inq">5. Jerry Peng</a>
+            <a class="collection-item active inq">6. Andrew Kim</a>
+            <a class="collection-item inq">7. John Smith</a>
+            <a class="collection-item inq">8. Dan Johnson</a>
+            <a class="collection-item inq">9. Hans Chen</a>
+            <a class="collection-item inq">10. Kendrick Tse</a>
+            <a class="collection-item inq">11. Justin Chang</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s6">
+<!--         <h5><strong>Queue Description</h5></strong></h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rhoncus commodo nibh eget vestibulum. Aliquam efficitur sagittis tempor. Sed sit amet ultrices justo. Aliquam efficitur sagittis tempor. Sed sit amet ultrices justo eget. </p>
+        <br /> -->
+        <div class="capacityDisplayInQ">
+          <!-- <h6 id="urCurrently">You are currently</h6> -->
+          <p class="bigNumber"> 6 </p> <p id="outof"> / 24 </p>
+          <h6 class="pplCurrentlyInQ">Your position in the queue</h6>
+          <br>
+          <hr>
+        </div>
+        <iframe id="igraph" scrolling="no" style="border:none;"seamless="seamless" src="https://plot.ly/~HansChen/12.embed?link=false" height="400" width="550"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer  blue-grey darken-2">
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="red-text text-lighten-2">Yeee</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

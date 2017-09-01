@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>CMQ</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/cmq.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<ul id="dropdown1" class="dropdown-content">
+<li><a href="manageq.html">Manage Queue </a></li>
+  <li><a href="login.html">Logout</a></li>
+</ul>
+
+  <nav class="red darken-4" role="navigation">
+    <div class="nav-wrapper">
+      <a id="logo" href="index.html" class="brand-logo">CMQueue</a>
+      <ul class="right hide-on-med-and-down">
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="" id="logout" data-beloworigin="true" data-activates="dropdown1">Andrew Kim<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+    </div>
+  </nav>
+
+  <div class="section no-pad-bot no-pad-top" id="queueContainer">
+    <div class="row">
+      <div class="col s6">
+        <h5> Select a Queue Type </h5>
+      </div>
+    </div>
+    <div class="row">    
+        <div class="col s6 m3">
+          <div class="card browseq">
+            <div class="card-image">
+              <img class="joinIcon" src="images/clipboard.png"/>
+            </div>
+            <div class="card-content">
+              <h5> Office Hours </h5>
+                            <hr>
+              <p>Browse queues for office hours in classes you're currently enrolled in.  <br><br>You can view a list of classes currently holding OH and join a queue from there. </p>
+              <br>
+              <a href="listq.html" class="waves-effect waves-light btn">Browse</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s6 m3">
+          <div class="card browseq">
+            <div class="card-image">
+              <img class="joinIcon" src="images/library.png"/>
+            </div>
+            <div class="card-content">
+              <h5> Study Areas </h5>
+              <hr>
+              <p> View/monitor the capacity and occupancy of your favority study areas! <br><br>Tired of walking around looking for a spot to study? Find a study area now.</p>
+              <br>
+              <a href="listq.html" class="waves-effect waves-light btn">Browse</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s6 m3">
+          <div class="card browseq">
+            <div class="card-image">
+              <!-- <p id=""> -->
+              <img class="joinIcon" src="images/basketball.png"/>
+              <!-- </p> -->
+            </div>
+            <div class="card-content">
+              <h5> Sports </h5>
+                            <hr>
+              <p>Looking for a pickup game of basketball? Bored of waiting around trying to join a game of frisbee or soccer?<br><br>Browse the sports queues to find a game to join now!</p>
+              <br>
+              <a href="listq.html" class="waves-effect waves-light btn">Browse</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s6 m3">
+          <div class="card browseq">
+            <div class="card-image">
+              <img class="joinIcon" src="images/restaurant.png"/>
+            </div>
+            <div class="card-content">
+              <h5> Dining </h5>
+              <hr>  
+              <p>Hungry and looking for a quick place to grab a bite? <br><br>Browse the eateries on campus and monitor their occupancies to minimize your waiting time. <br>
+              </p>
+              <br>
+              <a href="listq.html" class="waves-effect waves-light btn">Browse</a>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+<!-- 
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+      </div>
+
+    </div>
+    
+  </div> -->
+
+  <br>
+  <footer class="page-footer blue-grey darken-2">
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="red-text text-lighten-2">Yeee</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
